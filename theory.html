@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Теория</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">Основы C# для игр</div>
+    <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="theory.html">Теория</a>
+        <a href="practice.html">Практика</a>
+    </nav>
+</header>
+
+<section>
+    <h2>Что такое C#?</h2>
+    <p>
+        C# — это современный язык программирования от Microsoft, 
+        который широко используется для разработки игр с помощью Unity.
+    </p>
+
+    <h2>Пример кода:</h2>
+
+    <textarea id="code">
+using System;
+
+class Program {
+    static void Main() {
+        Console.WriteLine("Hello GameDev!");
+    }
+}
+    </textarea>
+
+    <button onclick="runCode()">Запустить код</button>
+
+    <pre id="output">Здесь появится результат...</pre>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

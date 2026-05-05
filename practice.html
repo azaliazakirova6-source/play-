@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Практика</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">Тест по C#</div>
+    <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="theory.html">Теория</a>
+        <a href="practice.html">Практика</a>
+    </nav>
+</header>
+
+<section>
+
+    <!-- Вопрос 1 -->
+    <div class="question">
+        <p>1. Какой тип данных хранит текст?</p>
+        <div class="answers">
+            <button onclick="checkAnswer(1, false)">int</button>
+            <button onclick="checkAnswer(1, true)">string</button>
+            <button onclick="checkAnswer(1, false)">bool</button>
+        </div>
+    </div>
+
+    <!-- Вопрос 2 -->
+    <div class="question">
+        <p>2. Какая команда выводит текст в консоль?</p>
+        <div class="answers">
+            <button onclick="checkAnswer(2, true)">Console.WriteLine()</button>
+            <button onclick="checkAnswer(2, false)">print()</button>
+            <button onclick="checkAnswer(2, false)">echo()</button>
+        </div>
+    </div>
+
+    <!-- Вопрос 3 -->
+    <div class="question">
+        <p>3. Как объявить переменную?</p>
+        <div class="answers">
+            <button onclick="checkAnswer(3, true)">int x = 5;</button>
+            <button onclick="checkAnswer(3, false)">x := 5</button>
+            <button onclick="checkAnswer(3, false)">var: x = 5</button>
+        </div>
+    </div>
+
+    
+    <div class="question">
+        <p>4. Как называется метод входа в программу?</p>
+        <div class="answers">
+            <button onclick="checkAnswer(4, false)">Start()</button>
+            <button onclick="checkAnswer(4, true)">Main()</button>
+            <button onclick="checkAnswer(4, false)">Run()</button>
+        </div>
+    </div>
+
+    <p id="result">Ответьте на вопросы</p>
+
+</section>
+<script src="script.js"></script>
+</body>
+</html>
